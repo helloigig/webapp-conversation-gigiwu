@@ -128,3 +128,13 @@ a {
   background-clip: text;
   text-fill-color: transparent;
 }
+/* Force the app to fit the iframe without scrolling */
+html, body {
+  overflow: hidden !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+#__next {
+  height: 100%;
+}
