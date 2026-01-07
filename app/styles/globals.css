@@ -138,3 +138,22 @@ html, body {
 #__next {
   height: 100%;
 }
+
+/* ==================================================
+   NUCLEAR OPTION: HIDE ALL HEADERS
+   ================================================== */
+
+/* 1. Hides the specific bold text "New conversation" */
+.text-gray-800.font-bold {
+  display: none !important;
+}
+
+/* 2. Hides the entire top header container if it still exists */
+.flex.items-center.justify-between.h-12 {
+  display: none !important;
+}
+
+/* 3. Safety Net: Hides any element that looks like a header title */
+div[class*="text-gray-800"][class*="font-bold"] {
+  display: none !important;
+}
